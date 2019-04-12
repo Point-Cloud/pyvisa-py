@@ -180,7 +180,7 @@ def find_devices(vendor=None, product=None, serial_number=None,
     elif product is not None:
         kwargs['idProduct'] = product
 
-    if serial_number:
+    if serial_number and serial_number != 'None':
         attrs['serial_number'] = str(serial_number)
 
     if attrs:
